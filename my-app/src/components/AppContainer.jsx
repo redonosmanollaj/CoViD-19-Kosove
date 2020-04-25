@@ -1,6 +1,6 @@
 import React from "react";
 
-import './styles/styles.css'
+import "./styles/styles.css";
 import Header from "./Header";
 import CovidData from "./CovidData";
 import News from "./News";
@@ -13,10 +13,7 @@ function AppContainer(props) {
         isNewsClicked={props.isNewsClicked}
         handleNews={props.handleNews}
       />
-      <CovidData 
-      data={props.data} isLoading={props.isLoading} />
-      {props.isNewsClicked && <News />}
-      <div className="Home"></div>
+      <CovidData data={props.data} isLoading={props.isLoading} />
       <News />
       <Footer />
     </div>
