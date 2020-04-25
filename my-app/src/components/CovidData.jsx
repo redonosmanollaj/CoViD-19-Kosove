@@ -1,63 +1,56 @@
-import React, { Component } from "react";
+import React from "react";
+import "./styles/covidData.css";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./styles.css";
-
-class CovidData extends Component {
-  render() {
-    return (
-      <div className="te-dhenat">
-        <div className="row" style={{ height: "200px" }}>
+function CovidData(props) {
+  return (
+    <div className="te-dhenat">
+        <div className="row">
           <div className="col">
-            <h5 className="card-title" style={{ textAlign: "center" }}>
-              Të konfirmuara
-            </h5>
+      <div className="data">
+            <h5>Të konfirmuara</h5>
             <h4>
-              {this.props.isLoading ? (
+              {props.isLoading ? (
                 <i className="fas fa-spinner fa-spin"></i>
               ) : (
-                this.props.data.infected
+                props.data.infected
               )}
-              <i className="fas fa-user-plus" style={{ fontSize: "45px" }}></i>
+              <i className="fas fa-user-plus"></i>
             </h4>
           </div>
+        </div>
 
-          <div className="col">
-            <h5 className="card-title" style={{ textAlign: "center" }}>
-              {" "}
-              Të shëruar{" "}
-            </h5>
-            <h4 style={{}}>
-              {this.props.isLoading ? (
-                <i className="fas fa-spinner fa-spin"></i>
-              ) : (
-                this.props.data.recovered
-              )}{" "}
-              <i className="far fa-smile-beam" style={{ fontSize: "45px" }}></i>{" "}
-            </h4>
-          </div>
-
-          <div className="col">
-            <h5 className="card-title" style={{ textAlign: "center" }}>
-              Të vdekur
-            </h5>
+        <div className="col">
+          <div className="data">
+            <h5> Të shëruar </h5>
             <h4>
-              {this.props.isLoading ? (
+              {props.isLoading ? (
+                <i className="fas fa-spinner fa-spin" />
+                ) : (
+                  props.data.recovered
+                )}{" "}
+                <i className="far fa-smile-beam" />
+            </h4>
+          </div>
+        </div>
+
+        <div className="col">
+          <div className="data">
+            <h5> Të vdekur </h5>
+            <h4>
+              {props.isLoading ? (
                 <i className="fas fa-spinner fa-spin" />
               ) : (
-                this.props.data.deceased
+                props.data.deceased
               )}
               <i
-                className="fas fa-skull-crossbones"
-                style={{ fontSize: "45px" }}
+                className="fas fa-heart-broken"
               ></i>
             </h4>
           </div>
         </div>
-        
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default CovidData;

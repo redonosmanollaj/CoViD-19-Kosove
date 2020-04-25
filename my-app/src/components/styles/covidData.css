@@ -1,0 +1,24 @@
+.te-dhenat .row {
+  background-color: rgb(56, 81, 90);
+  padding-top: 6em;
+}
+
+.fa-user-plus {
+  font-size: 45px;
+}
+
+.data {
+    margin: 15%;
+    border-bottom: 2px solid rgb(195, 179, 172);
+    padding-bottom: 30px;
+}
+
+.fa-smile-beam,
+.fa-heart-broken,
+.fa-user-plus {
+    font-size: 45px;
+    padding-left: 5px;
+}
+
+
+

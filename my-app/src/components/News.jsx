@@ -1,50 +1,14 @@
 import React, { Component } from "react";
-import covidVideo from "./.videos/CoVID-3D.mp4";
-import corona3 from "./photos/corona3.jpg";
-import dogs from "./photos/dogs.png";
-import cough from "./photos/cough.jpg";
 
+import corona3 from "./.photos/corona3.jpg";
+import dogs from "./.photos/dogs.png";
+import cough from "./.photos/corona3.jpg";
 import Keshilla from "./Keshilla";
-import Statistika from "./Statistika";
 
 class News extends Component {
-  constructor(props) {
-    super(props);
-    this.vidRef = React.createRef();
-  }
-  state = {
-    isPlaying: false,
-  };
-
   render() {
     return (
       <div>
-        <div className="row" style={{ height: "auto" }} id="ballina">
-          <div className="col" style={{ textAlign: "left" }}>
-            <div className="col">
-              <h4 style={{ fontWeight: "lighter" }}>
-                Në videon më poshtë mund të shikoni se çfarë lloj virusi është
-                ky dhe si mund të shpërndahet
-              </h4>
-
-              <video
-                className="video1"
-                ref={this.vidRef}
-                src={covidVideo}
-                onClick={
-                  !this.state.isPlaying ? this.playVideo : this.stopVideo
-                }
-              />
-              <button
-                onClick={ !this.state.isPlaying ? this.playVideo : this.stopVideo }
-                className="btnPlay"
-                id="p2"
-              >
-                <i className="fas fa-play fa-2x" />
-              </button>
-            </div>
-          </div>
-        </div>
         <div className="row">
           <div className="col" style={{ textAlign: "right" }}>
             <h2 style={{ fontWeight: "lighter" }}>
@@ -123,8 +87,7 @@ class News extends Component {
           </div>
         </div>
 
-        <Keshilla id="keshilla"/>
-        <Statistika id="statistika"/>
+        <Keshilla id="keshilla" />
       </div>
     );
   }

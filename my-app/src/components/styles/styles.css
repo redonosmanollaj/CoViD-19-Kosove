@@ -10,6 +10,10 @@ html {
   height: auto;
 }
 
+.h4{
+  font-weight: lighter;
+}
+
 h5 {
   color: #969292;
   font-weight: 330 !important;
@@ -23,6 +27,7 @@ h5 {
   background-color: rgb(56, 81, 90);
   margin: 0px !important;
   justify-content: center;
+  padding-bottom: 40px;
 }
 .video1 {
   padding-top: 10px;
@@ -80,10 +85,6 @@ h5 {
   border-radius: 10px;
 }
 
-.te-dhenat .row {
-  background-color: rgb(56, 81, 90);
-  padding-top: 6em;
-}
 
 .header {
 

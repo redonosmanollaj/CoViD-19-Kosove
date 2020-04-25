@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Country from './components/Country';
+import AppContainer from './components/AppContainer';
 
 class App extends Component {
   state = {
@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Country
+        <AppContainer
           data={this.state.Kosovo}
           isLoading={this.state.isLoading}
           isNewsClicked={this.state.isNewsClicked}
