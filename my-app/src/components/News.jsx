@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import corona3 from "./.photos/corona3.jpg";
 import dogs from "./.photos/dogs.png";
-import cough from "./.photos/corona3.jpg";
+import cough from "./.photos/cough.jpg";
 import Keshilla from "./Keshilla";
 
 class News extends Component {
@@ -27,8 +27,8 @@ class News extends Component {
             <img
               className="fotoballina"
               src={corona3}
-              // width="793px"
-              // height="356px"
+              width="100%"
+              height="300px"
               alt="Foto e virusit"
             />
           </div>
@@ -39,7 +39,7 @@ class News extends Component {
             <img
               className="fotoballina"
               src={cough}
-              width="500px"
+              width="600px"
               height="300px"
               alt="Foto e virusit"
             />
@@ -80,8 +80,8 @@ class News extends Component {
             <img
               className="fotoballina"
               src={dogs}
-              // width="793px"
-              // height="356px"
+              width="600px"
+              height="300px"
               alt="Foto e virusit"
             />
           </div>
